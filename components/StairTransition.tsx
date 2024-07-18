@@ -1,7 +1,9 @@
 "use client";
 
-import { animate, AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+
+const divsCount = 6;
 
 export default function StairTransition() {
   const pathname = usePathname();
@@ -9,7 +11,7 @@ export default function StairTransition() {
     <AnimatePresence mode="wait">
       <div key={pathname}>
         <div className="h-screen w-screen fixed top-0 right-0 left-0 pointer-events-none z-40 flex">
-          {[...Array(6)].map((_, i) => (
+          {[...Array(divsCount)].map((_, i) => (
             <motion.div
               key={i}
               variants={{
@@ -23,7 +25,7 @@ export default function StairTransition() {
               transition={{
                 duration: 0.4,
                 ease: "easeInOut",
-                delay: 0.1 * (6 - i - 1),
+                delay: 0.1 * (divsCount - i - 1),
               }}
               className="w-full h-full relative bg-white"
             />

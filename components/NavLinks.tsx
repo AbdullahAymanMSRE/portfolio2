@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SheetClose } from "./ui/sheet";
 
 const links = [
   {
@@ -27,10 +28,15 @@ const links = [
   },
 ];
 
-export default function Nav() {
+export default function NavLinks({
+  className,
+  mobile,
+  ...props
+}: { mobile?: boolean } & JSX.IntrinsicElements["div"]) {
   const pathname = usePathname();
+
   return (
-    <nav className="flex items-center gap-8">
+    <div className={cn("flex items-center gap-8", className)} {...props}>
       {links.map((link) => (
         <Link
           href={link.path}
@@ -42,9 +48,9 @@ export default function Nav() {
             }
           )}
         >
-          {link.name}
+          {mobile ? <SheetClose>{link.name}</SheetClose> : link.name}
         </Link>
       ))}
-    </nav>
+    </div>
   );
 }
