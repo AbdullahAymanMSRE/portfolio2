@@ -15,13 +15,15 @@ export default function Home() {
           <div className="text-center max-xl:order-2 xl:text-left">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br />{" "}
+              {"Hello I'm"} <br />{" "}
               <span className="text-accent">Abdullah Ayman</span>
             </h1>
             <p className="mb-9 max-w-[600px] text-white/80">
+              {`
               Proficient in React JS and PHP Laravel. I bring creativity and
               precision to every project. Let's turn your ideas into captivating
               web realities!
+            `}
             </p>
 
             <div className="flex items-center gap-8 max-lg:flex-col">
