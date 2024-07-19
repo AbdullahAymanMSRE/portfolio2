@@ -4,6 +4,15 @@
 
 @layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply bg-primary font-primary leading-loose text-white;
+  }
+  .h1 {
+    @apply text-[48px] font-semibold leading-[1.1] xl:text-[70px];
+  }
+  .h2 {
+    @apply text-4xl font-semibold leading-[1.1] xl:text-[48px];
+  }
+  .h3 {
+    @apply text-[20px] font-semibold leading-[1.1] xl:text-[24px];
   }
 }

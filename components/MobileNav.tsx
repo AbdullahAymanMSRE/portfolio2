@@ -12,12 +12,12 @@ import Link from "next/link";
 export default function MobileNav() {
   return (
     <Sheet>
-      <SheetTrigger className="flex justify-between items-center">
+      <SheetTrigger className="flex items-center justify-between">
         <CiMenuFries className="text-3xl text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col overflow-y-auto">
         {/* logo */}
-        <div className="mt-32 mb-40  text-center ">
+        <div className="mb-40 mt-32 text-center">
           <Link href="/">
             <SheetClose>
               <Logo />
