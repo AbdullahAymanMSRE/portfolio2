@@ -44,6 +44,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formValues.message) return;
     const serviceId = "service_bjcd37o";
     const templateId = "template_e9vmutm";
 
@@ -56,7 +57,6 @@ export default function Contact() {
         phone: formValues.phone,
       });
 
-      // show toast
       toast.success("I successfully received your message.");
 
       setFormValues({
@@ -156,7 +156,7 @@ export default function Contact() {
                 size="md"
                 className="max-w-40"
                 type="submit"
-                disabled={loading}
+                disabled={loading || !formValues.message}
               >
                 {loading ? "Sending..." : "Send message"}
               </Button>
@@ -165,13 +165,18 @@ export default function Contact() {
           <div className="order-1 mb-8 flex flex-1 items-center xl:order-none xl:mb-0 xl:justify-end">
             <ul className="flex flex-col gap-10">
               {info.map((item) => (
-                <li key={item.title} className="flex items-center gap-6">
+                <li
+                  key={item.title}
+                  className="flex items-center gap-6 max-sm:gap-3"
+                >
                   <div className="flex size-[52px] items-center justify-center rounded-md bg-[#27272c] text-accent xl:size-[72px]">
                     <div className="text-[28px]">{item.icon}</div>
                   </div>
                   <div className="flex-1">
                     <p className="text-white/60">{item.title}</p>
-                    <h3 className="text-xl">{item.description}</h3>
+                    <h3 className="text-xl max-sm:text-lg">
+                      {item.description}
+                    </h3>
                   </div>
                 </li>
               ))}

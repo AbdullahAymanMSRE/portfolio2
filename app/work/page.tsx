@@ -76,7 +76,7 @@ export default function Work() {
                 {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item, index) => (
                   <li key={item.name} className="text-xl text-accent">
                     {item.name}
