@@ -253,7 +253,23 @@ export default function Resume() {
             </TabsContent>
 
             <TabsContent value="about" className="w-full">
-              Coming soon!
+              <div className="flex flex-col gap-7 max-xl:text-center">
+                <TitleAndDescription
+                  title={about.title}
+                  description={about.description}
+                />
+                <ul className="mx-auto grid max-w-[620px] grid-cols-1 gap-y-6 xl:mx-0 xl:grid-cols-2">
+                  {about.info.map((item) => (
+                    <li
+                      key={item.fieldName}
+                      className="flex items-center justify-center gap-4 xl:justify-start"
+                    >
+                      <span className="text-white/60">{item.fieldName}</span>
+                      <span className="text-xl">{item.fieldValue}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>

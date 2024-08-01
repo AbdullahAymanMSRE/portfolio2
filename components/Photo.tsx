@@ -10,7 +10,7 @@ export default function Photo() {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2, duration: 0.4, eas: "easeIn" },
+          transition: { delay: 1.2, duration: 0.4, eas: "easeIn" },
         }}
       >
         {/* image */}
@@ -18,7 +18,7 @@ export default function Photo() {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, eas: "easeInOut" },
+            transition: { delay: 1.4, duration: 0.4, eas: "easeInOut" },
           }}
           className="absolute size-[298px] mix-blend-lighten xl:size-[450px]"
         >

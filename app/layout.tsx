@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -30,7 +32,24 @@ export default function RootLayout({
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
+        <ToastProvider />
       </body>
     </html>
+  );
+}
+
+function ToastProvider() {
+  "use client";
+
+  return (
+    <ToastContainer
+      className="z-[999999999]"
+      position="top-center"
+      toastClassName="!bg-accent !text-primary"
+      autoClose={2000}
+      closeButton={false}
+      icon={false}
+      hideProgressBar
+    />
   );
 }
