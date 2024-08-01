@@ -56,12 +56,6 @@ export default function Services() {
                 <div className="text-outline group-hover:text-outline-hover text-5xl font-extrabold text-transparent transition-all duration-500">
                   {service.num}
                 </div>
-                <Link
-                  href={service.href}
-                  className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white transition-all duration-500 hover:-rotate-45 group-hover:bg-accent"
-                >
-                  <BsArrowDownRight className="text-3xl text-primary" />
-                </Link>
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white transition-all duration-500 group-hover:text-accent">
                 {service.title}

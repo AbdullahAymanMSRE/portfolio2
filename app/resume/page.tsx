@@ -262,7 +262,7 @@ export default function Resume() {
                   {about.info.map((item) => (
                     <li
                       key={item.fieldName}
-                      className="flex items-center justify-center gap-4 xl:justify-start"
+                      className="flex items-center justify-center gap-4 max-sm:flex-col max-sm:gap-1 xl:justify-start"
                     >
                       <span className="text-white/60">{item.fieldName}</span>
                       <span className="text-xl">{item.fieldValue}</span>

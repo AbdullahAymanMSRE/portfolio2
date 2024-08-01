@@ -34,15 +34,15 @@ export default function Photo() {
 
         {/* circle  */}
         <motion.svg
-          className="size-[300px] xl:size-[460px]"
+          className="size-[300px] xl:size-[470px]"
           fill="transparent"
           viewBox="0 0 440 460"
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
             cx="220"
-            cy="225"
-            r="225"
+            cy="220"
+            r="215"
             stroke="#00ff99"
             strokeWidth="4"
             strokeLinecap="round"
