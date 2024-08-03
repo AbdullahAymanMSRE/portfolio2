@@ -38,6 +38,15 @@ const projects = [
   },
   {
     num: "03",
+    title: "Polywin",
+    description:
+      "I worked as a frontend developer to create a new website for Polywin company. The website is built using React and SASS.",
+    stack: [{ name: "Javascript" }, { name: "React" }, { name: "Sass" }],
+    image: "/assets/polywin.png",
+    live: "https://polywinegypt.com/",
+  },
+  {
+    num: "03",
     title: "Algorithms Visualizer",
     description:
       "AlgoV is a web application that visualizes different algorithms. It is built using React and Tailwind CSS.",
