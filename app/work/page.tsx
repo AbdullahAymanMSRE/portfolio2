@@ -46,7 +46,7 @@ const projects = [
     live: "https://polywinegypt.com/",
   },
   {
-    num: "03",
+    num: "04",
     title: "Algorithms Visualizer",
     description:
       "AlgoV is a web application that visualizes different algorithms. It is built using React and Tailwind CSS.",
