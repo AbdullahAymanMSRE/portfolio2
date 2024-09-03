@@ -123,7 +123,7 @@ export default function Work() {
             >
               {projects.map((project) => (
                 <SwiperSlide key={project.num} className="w-full">
-                  <div className="group relative flex aspect-square max-h-[460px] w-full items-center justify-center bg-pink-50/20">
+                  <div className="group relative flex aspect-square max-h-[460px] w-full items-center justify-center overflow-hidden bg-pink-50/20">
                     <div className="absolute bottom-0 top-0 z-10 size-full bg-black/10"></div>
                     <div className="relative size-full">
                       <Image
