@@ -27,14 +27,17 @@ export default function Home() {
             </p>
 
             <div className="flex items-center gap-8 max-lg:flex-col">
-              <Button
-                variant="outline"
-                className="flex items-center gap-2"
-                size="lg"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="https://drive.google.com/file/d/11xlcRAabiRwTSKNVgNQVk8gCd5E29CgH/view?usp=share_link">
+                <Button
+                  variant="outline"
+                  className="flex items-center gap-2"
+                  size="lg"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
+
               <div className="mb-8 xl:mb-0">
                 <Socials
                   className="flex items-center gap-6"
