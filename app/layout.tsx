@@ -16,9 +16,10 @@ const jetBrainMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abdullah Ayman",
+  title:
+    "Abdullah Ayman | Senior Full Stack Engineer | React | Next.js | Laravel",
   description:
-    "with 3 years of expertise crafting immersive digital experiences. Proficient in React JS and PHP Laravel I bring creativity and precision to every project. Let's turn your ideas into captivating web realities",
+    "Hi, I love to help clients build fast, modern, and scalable web apps that look great and work even better. From responsive UI design to API integrations, I make sure every line of code serves your business goals. I’ve got solid experience with tools like React, Next.js, TypeScript and Laravel, and I’m always excited to learn new tech to deliver the best solutions possible",
 };
 
 export default function RootLayout({
