@@ -23,42 +23,48 @@ const projects = [
   },
   {
     num: "02",
-    title: "SaaS Landing Page",
+    title: "Cvehak",
     description:
-      "In this project I have turned a Figma template into a live Next.js page. The page is fully responsive.",
-    stack: [
-      { name: "Javascript" },
-      { name: "React" },
-      { name: "Next.js" },
-      { name: "Sass" },
-    ],
-    image: "/assets/saas.png",
-    live: "https://retail-template.vercel.app/",
-    github: "https://github.com/AbdullahAymanMSRE/retail-template",
+      "Cvehak is a web application that analyzes and review your CV for free. It is built using Next.js, Prisma and PostgreSQL.",
+    stack: [{ name: "Next.js" }, { name: "Prisma" }, { name: "PostgreSQL" }],
+    image: "/assets/cvehak.png",
+    live: "https://cvehak.com/",
+    github: "https://github.com/AbdullahAymanMSRE/cvehak",
   },
   {
     num: "03",
+    title: "Khwaga",
+    description:
+      "Khwaga is a web application that allows users to sell and buy their cars. It is built using Next.js, Prisma and PostgreSQL.",
+    stack: [{ name: "Next.js" }, { name: "Prisma" }, { name: "PostgreSQL" }],
+    image: "/assets/khwaga.png",
+    live: "https://khwaga.vercel.app/",
+    github: "https://github.com/AbdullahAymanMSRE/khwaga",
+  },
+  {
+    num: "04",
+    title: "Baytalkhayt",
+    description:
+      "Next.js fullstack website for Bayt Al-Khayt compnay, I created this project from scratch and used multiple technologies in it including: Payload CMS, Stripe, Tailwind CSS and Mongodb.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Payload CMS" },
+      { name: "Next.js" },
+      { name: "Stripe" },
+      { name: "Tailwind CSS" },
+      { name: "Mongodb" },
+    ],
+    image: "/assets/baytalkhayt.jpg",
+    live: "https://baytalkhayt.com/",
+  },
+  {
+    num: "05",
     title: "Polywin",
     description:
       "I worked as a frontend developer to create a new website for Polywin company. The website is built using React and SASS.",
     stack: [{ name: "Javascript" }, { name: "React" }, { name: "Sass" }],
     image: "/assets/polywin.png",
-    live: "https://polywinegypt.com/",
-  },
-  {
-    num: "04",
-    title: "Algorithms Visualizer",
-    description:
-      "AlgoV is a web application that visualizes different algorithms. It is built using React and Tailwind CSS.",
-    stack: [
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "Javascript" },
-      { name: "React" },
-    ],
-    image: "/assets/algov.png",
-    live: "https://algov-visualizer.vercel.app/",
-    github: "https://github.com/Abdelrahman-Abdelmoaty/AlgoV",
+    live: "https://polywin.vercel.app/",
   },
 ];
 

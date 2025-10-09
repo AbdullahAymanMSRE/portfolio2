@@ -20,9 +20,9 @@ export default function Home() {
             </h1>
             <p className="mb-9 max-w-[600px] text-white/80">
               {`
-              Proficient in React JS and PHP Laravel. I bring creativity and
-              precision to every project. Let's turn your ideas into captivating
-              web realities!
+              I love to help clients build fast and modern web apps. From responsive 
+              UI design to API integrations, 
+              I make sure every line of code serves your business.
             `}
             </p>
 

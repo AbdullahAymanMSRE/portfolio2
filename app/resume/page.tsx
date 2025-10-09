@@ -39,20 +39,12 @@ const about = {
       fieldValue: "(+20) 115 350 9018",
     },
     {
-      fieldName: "Experience",
-      fieldValue: "+3 Years",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "abdullahaymanmsre@gmail.com",
-    },
-    {
       fieldName: "Languages",
       fieldValue: "Arabic, English",
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldName: "Email",
+      fieldValue: "abdullahaymanmsre@gmail.com",
     },
   ],
 };
@@ -64,19 +56,24 @@ const experience = {
     "I have worked on a variety of projects, including educational websites, blogs, and personal portfolios. I have experience with both front-end and back-end development, and I am comfortable working with a variety of technologies.",
   items: [
     {
-      company: "Wearby",
-      position: "Front-End Developer",
-      duration: "2024 - Present",
+      company: "Jazieel.sa",
+      position: "Fullstack Web Developer",
+      duration: "Jul 2025 - Present",
     },
     {
       company: "Upwork",
       position: "Professional Freelancer",
-      duration: "2024 - Present",
+      duration: "Jan 2024 - Present",
+    },
+    {
+      company: "Wearby",
+      position: "Front-End Developer",
+      duration: "Mar 2024 - Sep 2024",
     },
     {
       company: "Polywin Egypt",
       position: "Full-Stack Developer",
-      duration: "2022 - 2023",
+      duration: "Jan 2022 - Jan 2023",
     },
   ],
 };
